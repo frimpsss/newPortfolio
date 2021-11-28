@@ -28,6 +28,7 @@ header{
 .logo{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
+     color: #48494b;;
 }
 .nav-btns{
     font-size: 1.2rem;
@@ -97,7 +98,7 @@ header{
 /* end of hero ssection */
 
 /* Tablet */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 990px) {
     .wrapper{
         width: 80%;
     }
@@ -105,10 +106,10 @@ header{
         width: 95%;
     }
     .header-container{
-        height: 80px;
+        height: 100px;
     }
     header{
-        height: 80px;
+        height: 100px;
     }
     .logo, .nav-small-screen{
         font-size: 1.8rem;
@@ -117,7 +118,7 @@ header{
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         background-color: transparent;
-        top: 80px;
+        top: 100px;
         display: none;
         position: absolute;
         width: 100%;
@@ -142,11 +143,11 @@ header{
          color: rgb(0, 0, 0);
     }
     .hero{
-        padding-top: 350px;
-        height: 1050px;
+        padding: 300px 0;
+        height: 90vh;
     }
     .hero-content h3{
-        font-size: 3.1rem;
+        font-size: 3.2rem;
     }
     .hero-content p{
         font-size: 1.9rem;
@@ -171,8 +172,10 @@ header{
         top: 90px;
     }
     .hero{
-        padding-top: 180px;
-        height: 580px;
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        height: 85vh;
     }
     .hero-content h3{
         font-size: 1.8rem;
