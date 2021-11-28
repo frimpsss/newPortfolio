@@ -143,11 +143,11 @@ header{
          color: rgb(0, 0, 0);
     }
     .hero{
-        padding: 210px 0;
+        padding: 200px 0;
         height: 90vh;
     }
     .hero-content h3{
-        font-size: 3.2rem;
+        font-size: 4.3rem;
     }
     .hero-content p{
         font-size: 1.9rem;
@@ -178,10 +178,10 @@ header{
         height: 75vh;
     }
     .hero-content h3{
-        font-size: 1.8rem;
+        font-size: 3.2rem;
     }
     .hero-content p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
 }
