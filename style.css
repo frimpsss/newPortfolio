@@ -98,7 +98,7 @@ header{
 /* end of hero ssection */
 
 /* Tablet */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1025px) {
     .wrapper{
         width: 80%;
     }
@@ -147,7 +147,7 @@ header{
         height: 90vh;
     }
     .hero-content h3{
-        font-size: 4.3rem;
+        font-size: 3.7rem;
     }
     .hero-content p{
         font-size: 1.9rem;
