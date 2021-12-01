@@ -301,7 +301,7 @@ header{
         left: 0;
         max-width: 300px;
         position: relative;
-        transform: scale(0.9);
+        transform: scaleY(0.9);
 
     }
     .about-me .text-content{
