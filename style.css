@@ -262,13 +262,13 @@ header{
         font-size: 1.8rem;
     }
     .header-container{
-        height: 90px;
+        height: 70px;
     }
     header{
-        height: 90px;
+        height: 70px;
     }
     .nav-btns{
-        top: 90px;
+        top: 70px;
     }
     .hero{
         display: flex;
