@@ -6,10 +6,13 @@
 }
 
 body{
+    position: relative;
     font-family: 'Spartan', sans-serif;
 }
 a{
     text-decoration: none;
+}html{
+    scroll-behavior: smooth;
 }
 
 header{
@@ -19,6 +22,14 @@ header{
     /* border: black 2px dotted; */
     display: flex;
     align-items: center;
+}
+.scroll-nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    color: white;
+    background-color: black;
 }
 .logo{
     font-family: 'Poppins', sans-serif;
@@ -66,7 +77,18 @@ header{
 .nav-small-screen{
     display: none;
 }
-
+.preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    place-items: center;
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+}
 /* end of header */
 /* hero-section */
 .hero{
@@ -150,6 +172,20 @@ header{
 .text-content span{
     color: #f78702;
     font-weight: 600;
+}
+.top{
+    font-size: 3rem;
+    /* position: fixed; */
+    position: fixed;
+    right: 0;
+    bottom: 0%;
+    border: black;
+    z-index: 999;
+    visibility: hidden;
+    
+}
+.show{
+    visibility: visible;
 }
 /* end of about section */
 
@@ -305,7 +341,7 @@ header{
 
     }
     .about-me .text-content{
-        height: 38%;
+        height: 40%;
         width: 100%;
         justify-content: space-between;
     }
