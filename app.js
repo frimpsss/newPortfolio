@@ -12,7 +12,7 @@ navToggle.addEventListener("click", function() {
      }
 })
 window.addEventListener('load',function () {
-   document.querySelector('.prelader').style.display = 'grid'
+   document.querySelector('.preloader').style.display = 'none'
 })
 const toUp = document.querySelector('.top')
 const hero = document.querySelector('.hero')
