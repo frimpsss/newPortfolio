@@ -28,7 +28,7 @@ window.addEventListener('scroll', function () {
    // else{
    //    nav.classList.remove('scroll-nav')
    // }
-   if(scrollHeight > 100){
+   if(scrollHeight > (heroHeight/2)){
       toUp.classList.add('show')
    }
    else{
@@ -40,7 +40,9 @@ const navlinks = document.querySelectorAll(".nav-btns ul li a")
 
 navlinks.forEach(function(navlink) {
    navlink.addEventListener("click", function (e) {
-      if(window.w)
+      if(window.innerWidth < 1026){
+         links.style.display = "none"
+      }
       //prevent default
       e.preventDefault()
       //navigate to specific

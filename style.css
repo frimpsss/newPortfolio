@@ -29,6 +29,8 @@ header{
     right: 0;
     z-index: 999;
     color: white;
+    transform: scale(2);
+    transition: 1.5s infinite;
     background-color: black;
 }
 .logo{
@@ -88,6 +90,7 @@ header{
     background-color: black;
     color: white;
     font-size: 4rem;
+    transition: 10s;
 }
 /* end of header */
 /* hero-section */
@@ -177,7 +180,7 @@ header{
     font-size: 3rem;
     /* position: fixed; */
     position: fixed;
-    right: 0;
+    right: 5%;
     bottom: 0%;
     border: black;
     z-index: 999;
@@ -298,13 +301,13 @@ header{
         font-size: 1.8rem;
     }
     .header-container{
-        height: 70px;
+        height: 100px;
     }
     header{
-        height: 70px;
+        height: 100px;
     }
     .nav-btns{
-        top: 70px;
+        top: 100px;
     }
     .hero{
         display: flex;
