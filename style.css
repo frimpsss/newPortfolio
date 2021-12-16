@@ -294,6 +294,7 @@ header{
 
 @media screen and (max-width: 520px) {
 /* Mobile */
+    
     .wrapper{
         width: 90%;
     }
@@ -301,13 +302,13 @@ header{
         font-size: 1.8rem;
     }
     .header-container{
-        height: 100px;
+        height: 110px;
     }
     header{
-        height: 100px;
+        height: 110px;
     }
     .nav-btns{
-        top: 100px;
+        top: 110px;
     }
     .hero{
         display: flex;
