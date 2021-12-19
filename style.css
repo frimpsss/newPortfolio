@@ -231,6 +231,7 @@ header{
     left: 0;
     right: 0;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     background-color: #f7890228;
     width: 100%;
     color: #ffffff;
@@ -246,6 +247,7 @@ header{
 .card:hover .text-card{
     color: #ffffff;
     backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   
 }
 .text-card div span a{
@@ -260,6 +262,7 @@ header{
     visibility: hidden;
     left: 100%;
 } */
+
 .text-card h4{
     text-align: center;
     font-size: 1.4rem;
