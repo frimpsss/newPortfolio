@@ -21,7 +21,6 @@ window.addEventListener('scroll', function () {
    const heightNav = nav.getBoundingClientRect().height
    const scrollHeight = window.pageYOffset
    const heroHeight = hero.getBoundingClientRect().height
-   console.log(heroHeight)
    // if(scrollHeight > heightNav){
    //    nav.classList.add('scroll-nav')
    // }
@@ -58,3 +57,7 @@ navlinks.forEach(function(navlink) {
       )
    })
 })
+const dateElement = document.getElementById('date')
+let date = new Date()
+
+dateElement.innerHTML = "&copy " + date.getFullYear()

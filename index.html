@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/icon.png">
-   
+    
     <script src="./app.js" defer></script>
     <title>Frimp$</title>
 </head>
@@ -22,9 +22,9 @@
                 <div class="nav-btns">
                     <ul>
                         <li><a href="#about">About Me.</a></li>
-                        <li><a href="#">Repo.</a></li>
-                        <!-- <li><a href="#">Hire Me</a></li> -->
-                        <li><a href="#">Contact Me.</a></li>
+                        <li><a href="#services">What I do.</a></li>
+                        <li><a href="#repo">Projects.</a></li>
+                        <li><a href="#contact">Contact Me.</a></li>
                    
                     </ul>
                 </div>
@@ -45,20 +45,70 @@
     <section class="about-me" id="about">
         <div class="wrapper">
             <div class="photo">
-                <!-- <img src="https://html-css-portfolio-css-grid-project.netlify.app/images/hero-img.jpeg"> -->
                 <img src="./images/main-image.jpeg" alt="">
             </div>
             <div class="text-content">
                 <h3>About Me!</h3>
-                <p>I am <span>Akwasi Ampomah Frimpong</span> (the bitches call me donald) a second year Computer Engineering studeent at KNUST. I started coding not long ago( late 2020). I attend Labone SHS. I am christian and I like (slim-thick) cute girls.</p>
-                <p>I use <span>HTML 5</span>, <span>CSS 3</span>, <span>JAVASCRIPT</span>, <span>React.js</span>,<span>ReactNative</span>  also learning <span>PYTHON</span>. I know some basic <span>C Programming</span>. As for now I'm on Web and mobile dev't. But might branch to machine learning or embeded systems in the near future.</p>
+                <p>I am <span>Akwasi Ampomah Frimpong</span> <!--(the bitches call me donald) -->a second year Computer Engineering studeent at KNUST. I started coding not long ago( late 2020). I attend Labone SHS. I am christian and AI enthusiast.</p>
+                <p>I use <span>HTML 5</span>, <span>CSS 3</span>, <span>JAVASCRIPT</span>, <span>React.js</span><!--,<span>ReactNative</span>--> also learning <span>PYTHON</span>. I know some basic <span>C Programming</span>. As at now, I'm on Web and mobile dev't. But might branch to machine learning or embeded systems in the near future.</p>
                 <a href="#" class="btn">My CV</a>
             </div>
         </div>
     </section>
-    <section class="repo">
+    <section class="services" id="services">
         <div class="wrapper">
-            <h3 class="repo-text">Repository.</h3>
+            <h3 class="repo-text">What I do.</h3>
+            <div class="service-container">
+                <div class="service-card">
+                    <h4 style="text-align: center;">FrontEnd Web Development</h4>
+                    <div class="service-svg">
+                        <img src="images/development-web-development-svgrepo-com.svg" alt="" srcset="" height="80">
+                    </div>
+                    <div class="service-description">
+                        <p>I build the User Interface(UI) of of web apps using technologies such as <span>CSS</span>, <span>React JS</span>, <span>HTML</span></p>
+                    <!-- <p>Tools used:</p> -->
+                    <ul>
+                        <li><ion-icon name="logo-html5"></ion-icon></li>
+                        <li><ion-icon name="logo-css3"></ion-icon></li>
+                        <li><ion-icon name="logo-react"></ion-icon></li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="service-card middle-service-card">
+                    <h4 style="text-align: center;">Mobile App Development</h4>
+                    <div class="service-svg">
+                        <img src="images/mobile-application-svgrepo-com.svg" alt="" srcset="" height="80">
+                    </div>
+                    <div class="service-description">
+                        <p>I build the cross platform of of mobile apps using technologies such as <span>React Native</span>, <span>Firebase</span></p>
+                    <!-- <p>Tools used:</p> -->
+                    <ul>
+                        <li><ion-icon name="logo-react"></ion-icon></li>
+                        <li><ion-icon name="logo-firebase"></ion-icon></li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h4 style="text-align: center;">Machine Learning</h4>
+                    <div class="service-svg">
+                        <img src="images/machine-learning-02-svgrepo-com.svg" alt="" srcset="" height="100">
+                    </div>
+                    <div class="service-description">
+                        <p>I build and train machine learnig models for stuff! using <span>python</span></p>
+                    <!-- <p>Tools used:</p> -->
+                    <ul>
+                        <li><ion-icon name="logo-python"></ion-icon></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="repo" id="repo">
+        <div class="wrapper">
+            <h3 class="repo-text">Projects.</h3>
             <div class="projects-container">
                 <div class="card">
                  <div class="image-card">
@@ -96,8 +146,8 @@
                        <img src="images/photo.png" alt="">
                     </div>
                     <div class="text-card">
-                        <h4>Time Management Dashboard</h4>
-                        <p style="text-align: center;">A challange i took on FrontEnd Mentor made with HTML CSS only</p>
+                        <h4>SoundWave</h4>
+                        <p style="text-align: center;">A design for a music streaming company HTML CSS only(not responsive)</p>
                         <div>
                             <span><a href="#" target="_blank" rel="noopener noreferrer"><ion-icon name="globe-outline"></ion-icon></a></span>
                             <span><a href="#" target="_blank" rel="noopener noreferrer"><ion-icon name="git-branch-outline"></ion-icon></a></span>
@@ -110,6 +160,29 @@
             </div>
         </div>
     </section>
+    <footer id="contact">
+        <div class="wrapper">
+            <div class="footer-content">
+                <h3>Lets Get in touch🤌</h3>
+                <p>Hit me up if you have any projects in mind or advice on improving existing projects. Just say Hi😉</p>
+                <div>
+                <p style="display: inline;">Send me a mail:</p>
+                <a href="mailto:afrimpong031@gmail.com" target="_blank" rel="noopener noreferrer" class="mail">afrimpong031@gmail.com</a>
+                </div>
+                <ul class="socials">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></ion-icon></a></li>
+                </ul>
+                   
+            </div>
+            
+        </div>
+    </footer>
+    <div style="width: 90%; margin: auto; text-align: center; background-color: #fffff2;">
+        <p>Akwasi Ampomah Frimpong🤪</p>
+        <span id="date" ></span>
+    </div>
     <div class="preloader">
         loading..
     </div>
