@@ -1,7 +1,9 @@
 const links = document.querySelector(".nav-btns")
 const navToggle = document.querySelector(".nav-small-screen")
 
-
+window.addEventListener('load',function () {
+   document.querySelector('.preloader').style.display = 'none'
+})
 
 navToggle.addEventListener("click", function() {
      if(links.style.display === "none"){
@@ -11,9 +13,7 @@ navToggle.addEventListener("click", function() {
         links.style.display = "none"
      }
 })
-window.addEventListener('load',function () {
-   document.querySelector('.preloader').style.display = 'none'
-})
+
 const toUp = document.querySelector('.top')
 const hero = document.querySelector('.hero')
 const nav = document.querySelector("header")
