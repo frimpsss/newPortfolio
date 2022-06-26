@@ -73,17 +73,11 @@ header{
 .nav-btns ul li a{
     display: block;
     list-style-type: none;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 10px 20px;
     color: black;
 }
-.active{
-    display: block;
-    list-style-type: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: black;
-}
+
 .nav-btns ul li a:hover{
     color: white;
     background-color: #003440;
@@ -192,7 +186,7 @@ header{
     /* background-color: #606060;/ */
     background-color: #003440;
     color: white;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 .text-content span{
     color: #003440;
@@ -223,7 +217,7 @@ header{
 .service-card{
     font-family: 'Roboto Mono', monospace;
     background-color: #EFF7F2;
-    border-radius: 15px;
+    border-radius: 2px;
     /* border: double blue 4px; */
     width: 29%;
     height: 370px;
@@ -268,7 +262,7 @@ box-shadow: 0px 0px 48px -2px rgba(0,0,0,0.3);
 }
 /* repo section */
 .repo {
-    height: 850px;
+    height: 530px;
     padding: 50px 0;
     /* background: #E8E8E8; */
     background-color: #E6F4FF;
@@ -286,87 +280,37 @@ box-shadow: 0px 0px 48px -2px rgba(0,0,0,0.3);
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.last-card{
-    margin: auto;
-}
-.card{
-    border-radius: 12px;
-    position: relative;
-    height: 250px;
-    width: 46%;
-}
-.image-card{
-    height: 100%;
-}
-.image-card img{
-    height: 100%;
-    border-radius: 12px;
-    
-}
-.text-card{
-    border-radius: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    background-color: #f7890228;
-    width: 100%;
-    color: #ffffff;
-    height: 100%;
-    padding: 50px 70px;
+.project-card{
+    width: 29%;
+    padding: 15px 30px;
+    height: 230px;
+    border: solid #003440 0.5px;
+    border-radius: 1px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    transition: 1.5s;
 }
-
-.card:hover .text-card{
-    -webkit-box-shadow: 0px 0px 46px -8px rgba(247,135,2,0.83); 
-    box-shadow: 0px 0px 46px -8px rgba(247,135,2,0.83);
-    color: #ffffff;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-  
+.project-card .name{
+    font-weight: 600;
 }
-.text-card div span a{
-    color: #ffffff;
-}
-.card:hover .text-card p, .card:hover .text-card h4{
-    display: none;
-    transition: 2s;
-}
-/* .second-card:hover .text-card{
-    color: #ffffff;
-    backdrop-filter: none;
-    visibility: hidden;
-    left: 100%;
-} */
-
-.text-card h4{
-    text-align: center;
-    font-size: 1.4rem;
-}
-.text-card p{
-    font-family: 1.2rem;
-    line-height: 20px;
-}
-.text-card div{
-    width: 50%;
+.project-card .links{
+    margin-top: 30px;
     display: flex;
-    font-size: 2rem;
+    width: 60%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+}
+.project-card .links a{
+    color: #003440;
 }
 .other-projects{
     font-size: 1.2rem;
     margin: 50px auto;
-    width: 200px;
+    width: 220px;
     display: grid;
+    padding: 0 12px;
     border: #003440 1px solid;
-    border-radius: 10px;
+    border-radius: 2px;
     place-items: center;
     transition: 0.5s;
     height: 50px;
@@ -420,7 +364,7 @@ section .wrapper{
     display: grid;
     color: #ffffff;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 2px;
     place-items: center;
     margin: 8px;
     background-color: #003440;
@@ -526,7 +470,7 @@ section .wrapper{
         font-size: 1rem;
     }
     .repo{
-        height: 1150px;
+        height: 1000px;
     }
     .repo-text{
         font-size: 2.2rem;
@@ -562,6 +506,11 @@ section .wrapper{
     .footer-content p{
         font-size: 1.1rem;
     }
+    .project-card{
+        width: 90%;
+        padding: 40px inherit;
+        height: 195px;
+    }
 } 
 
 @media screen and (max-width: 520px) {
@@ -586,7 +535,7 @@ section .wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 105px 0;
+        padding: 155px 0;
         height: 500px;
     }
     .hero-content h3{
@@ -596,7 +545,7 @@ section .wrapper{
         font-size: 1.1rem;
     }
     .about-me{
-        height: 1000px;
+        height: 400px;
     }
     .about-me .wrapper{
         justify-content: space-around;
@@ -604,7 +553,7 @@ section .wrapper{
     }
     .about-me .photo{
         border: none;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         height: 70%;
@@ -618,7 +567,7 @@ section .wrapper{
 
     }
     .about-me .text-content{
-        height: 50%;
+        height: 100%;
         width: 100%;
         justify-content: space-between;
     }
