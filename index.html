@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./images/icon.png">
     <script src="./app.js" defer></script>
     <title>Frimp$</title>
@@ -16,7 +17,7 @@
         <div class="head-wrapper">
             <div class="header-container">
                 <div class="logo">
-                    <a>frimps.wtf</a>
+                    <a>frimps.</a>
                 </div>
                 <div class="nav-btns">
                     <ul>
@@ -35,13 +36,13 @@
     </header>
     <section class="hero">
       <div class="wrapper">
-          <div class="hero-content">
+          <div class="hero-content" >
             <h3>Hi there! <br>I'm <span>Frimpong</span></h3>
             <p>Currently learning to build of <span>Web</span> and <span>Mobile</span> apps.</p>
           </div>
       </div>
     </section>
-    <section class="about-me" id="about">
+    <section class="about-me" id="about" data-aos="fade-down-right" data-aos-delay="200">
         <div class="wrapper">
             <div class="photo">
                 <img src="./images/main-image.jpeg" alt="">
@@ -58,11 +59,11 @@
             </div>
         </div>
     </section>
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-down-right" data-aos-delay="250">
         <div class="wrapper">
             <h3 class="repo-text">What I do.</h3>
             <div class="service-container">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-right">
                     <h4 style="text-align: center;">FrontEnd Web Development</h4>
                     <div class="service-svg">
                         <img src="images/development-web-development-svgrepo-com.svg" alt="" srcset="" height="80">
@@ -72,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="service-card middle-service-card">
+                <div class="service-card middle-service-card" data-aos="fade-down">
                     <h4 style="text-align: center;">Mobile App Development</h4>
                     <div class="service-svg">
                         <img src="images/mobile-application-svgrepo-com.svg" alt="" srcset="" height="80">
@@ -83,7 +84,7 @@
                     </div>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-left">
                     <h4 style="text-align: center;">Backend Development</h4>
                     <div class="service-svg">
                         <img src="images/machine-learning-02-svgrepo-com.svg" alt="" srcset="" height="100">
@@ -96,18 +97,74 @@
             </div>
         </div>
     </section>
-    <section class="repo" id="repo">
+    <section class="repo" id="repo" data-aos="fade-down-right">
         <div class="wrapper">
             <h3 class="repo-text">Projects.</h3>
             <div class="projects-container">
-                
+                <div class="project-card">
+                    <p class="name">Weather app</p>
+                    <p class="info">
+                        simple weather app built 
+                        with html css and vanila js
+                        <br>
+                        api used: 
+                        <a href="https://openweathermap.org/api" target="_blank" rel="noopener noreferrer">openweathermap.org/api</a>
+                    </p>
+                    <div class="links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="globe-outline">
+                            </ion-icon>
+                            <span>Live</span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <p class="name">task tracker</p>
+                    <p class="info">
+                        a task tracker app built with vue.js 
+                        and custom styles
+                        <br>
+                        <br>
+                    </p>
+                    <div class="links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="globe-outline"></ion-icon>
+                            <span>Live</span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <p class="name">rest api</p>
+                    <p class="info">
+                        rest api built with express js 
+                        and mongo db
+                        <br>
+                        <br>
+                    </p>
+                    <div class="links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="other-projects">
                 <a href="#" target="_blank" rel="noopener noreferrer">Other Projects🚀</a>
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" data-aos="fade-down-right" data-aos-delay="250">
         <div class="wrapper">
             <div class="footer-content">
                 <h3>Lets Get in touch🤌</h3>
@@ -130,7 +187,11 @@
         <a href="#" style="color: #003440;"><ion-icon name="caret-up-circle-outline"></ion-icon></a>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script  src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
