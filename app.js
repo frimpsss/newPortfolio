@@ -1,9 +1,9 @@
 const links = document.querySelector(".nav-btns")
 const navToggle = document.querySelector(".nav-small-screen")
 
-window.addEventListener('load',function () {
-   document.querySelector('.preloader').style.display = 'none'
-})
+// window.addEventListener('load',function () {
+//    document.querySelector('.preloader').style.display = 'none'
+// })
 
 navToggle.addEventListener("click", function() {
      if(links.style.display === "none"){
@@ -21,12 +21,6 @@ window.addEventListener('scroll', function () {
    const heightNav = nav.getBoundingClientRect().height
    const scrollHeight = window.pageYOffset
    const heroHeight = hero.getBoundingClientRect().height
-   // if(scrollHeight > heightNav){
-   //    nav.classList.add('scroll-nav')
-   // }
-   // else{
-   //    nav.classList.remove('scroll-nav')
-   // }
    if(scrollHeight > (heroHeight/2)){
       toUp.classList.add('show')
    }
@@ -37,8 +31,11 @@ window.addEventListener('scroll', function () {
 
 const navlinks = document.querySelectorAll(".nav-btns ul li a")
 
+
+
 navlinks.forEach(function(navlink) {
    navlink.addEventListener("click", function (e) {
+   
       if(window.innerWidth < 1026){
          links.style.display = "none"
       }
@@ -48,16 +45,31 @@ navlinks.forEach(function(navlink) {
       const id = e.currentTarget.getAttribute('href').slice(1)
       const element = document.getElementById(id)
       let position = element.offsetTop;
+      const heightNav = nav.getBoundingClientRect().height
       window.scrollTo(
          {
             left: 0,
-            top: position
+            top: position - heightNav
 
          }
       )
    })
 })
-const dateElement = document.getElementById('date')
-let date = new Date()
-
-dateElement.innerHTML = "&copy " + date.getFullYear()
+const sectionsLinks = document.querySelectorAll(".nav-btns ul li a")
+const sections = document.querySelectorAll("section")
+window.addEventListener("scroll", () => {
+      sections.forEach(section => {
+      const scrollHeight = window.pageYOffset
+      const heightNav = nav.getBoundingClientRect().height
+      if(scrollHeight + heightNav < section.offsetTop){
+         let id = section.getAttribute("id")
+         
+      sectionsLinks.forEach(link => {
+         link.classList.remove("active")
+         let current = link.getAttribute("href")
+         console.log(current)
+      })
+      }
+      
+   })
+})
