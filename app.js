@@ -55,21 +55,3 @@ navlinks.forEach(function(navlink) {
       )
    })
 })
-const sectionsLinks = document.querySelectorAll(".nav-btns ul li a")
-const sections = document.querySelectorAll("section")
-window.addEventListener("scroll", () => {
-      sections.forEach(section => {
-      const scrollHeight = window.pageYOffset
-      const heightNav = nav.getBoundingClientRect().height
-      if(scrollHeight + heightNav < section.offsetTop){
-         let id = section.getAttribute("id")
-         
-      sectionsLinks.forEach(link => {
-         link.classList.remove("active")
-         let current = link.getAttribute("href")
-         console.log(current)
-      })
-      }
-      
-   })
-})
